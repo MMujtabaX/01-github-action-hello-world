@@ -1,0 +1,14 @@
+# name -> event -> job -> runner -> steps
+
+name: Hello World Github Actions
+
+on:
+  push:
+    branches: [main]
+    
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hello World from Github Actions"
